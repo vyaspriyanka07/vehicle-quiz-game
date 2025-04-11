@@ -8,7 +8,7 @@ import random
 
 llm = ChatOpenAI(
     temperature=0.7,
-    openai_api_key="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"
+    openai_api_key=os.getenv("OPENAI_API_KEY")
 )
 
 # Agent 1: Quiz Generator
